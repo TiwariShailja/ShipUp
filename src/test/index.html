@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <title>Ship Up</title>
+  </head>
+  <body>
+    <div class="p-5 flex flex-col items-center relative">
+      <nav class="container h-14 flex items-center justify-between">
+        <h1 class="text-2xl">Ship <span class="text-red-600">Up</span></h1>
+        <ul class="sm:flex gap-7 text-sm hidden">
+          <li class=""><button id="companyBtn">Company</button></li>
+          <li class=""><a href="">Services</a></li>
+          <li class=""><a href="">Solutions</a></li>
+          <li class=""><a href="">Industries</a></li>
+          <li class=""><a href="">Insights</a></li>
+          <li class=""><a href="">News and Media</a></li>
+        </ul>
+        <i onclick="toggleMenu('block')" class="fa fa-bars menu-ico"></i>
+        <i onclick="toggleMenu('none')" id="close-ico" class="fa fa-times circle close-ico"></i>
+        <div class="flex gap-5 text-sm font-bold">
+          <button
+            class="ring-2 ring-[#2C2D5B] text-[#2C2D5B] rounded-lg px-6 py-3"
+          >
+            Request Qoute
+          </button>
+          <button class="bg-[#2C2D5B] text-white rounded-lg px-6 py-3">
+            Join Now
+          </button>
+        </div>
+      </nav>
+      <div
+        class="model absolute w-1/2 bg-slate-100 top-24 flex shadow-md rounded-lg"
+      >
+        <div class="flex-1 p-5">
+          <h1 class="font-bold text-xl mb-3">Company</h1>
+          <div class="flex flex-col gap-2">
+            <div class="flex justify-center items-center gap-4">
+              <img
+                src="../assets/location1281-5jcr.svg"
+                alt=""
+                class="w-10 h-10"
+              />
+              <div class="text-xs">
+                <h2 class="font-medium">About Us</h2>
+                <p>The people behind ShipUp and the story of shared success.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <img
+                src="../assets/location1281-5jcr.svg"
+                alt=""
+                class="w-10 h-10"
+              />
+              <div class="text-xs">
+                <h2 class="font-medium">Partner</h2>
+                <p>Collbration with ShipUp and drive mutual growth</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <img
+                src="../assets/location1281-5jcr.svg"
+                alt=""
+                class="w-10 h-10"
+              />
+              <div class="text-xs">
+                <h2 class="font-medium">Career</h2>
+                <p>Join the ShipUp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 p-5">
+          <h1 class="font-bold text-xl mb-3">Newsroom</h1>
+          <div
+            class="w-52 h-28 rounded-xl bg-blue-400 object-cover overflow-hidden"
+          >
+            <img
+              src="../assets/img.png"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <p class="text-sm mt-3">News and Awards</p>
+          <p class="text-sm text-red-500">Learn more</p>
+        </div>
+      </div>
+      <div class="container flex">
+        <div class="flex-1 flex flex-col justify-around py-32">
+          <h1 class="font-semibold text-4xl">
+            Quick and Reliable
+            <span class="text-red-600 font-bold"
+              >Warehousing<br />
+              and Logistic</span
+            >
+            Solution.
+          </h1>
+          <p class="">
+            ShipUp delivers an unparalleled customer service through dedicated
+            customer teams, engaged people working in an agile culture, and a
+            global footprint
+          </p>
+          <div class="flex items-center gap-5">
+            <button class="bg-[#2C2D5B] text-white rounded-lg px-6 py-3">
+              Join Now
+            </button>
+            <button 
+              class="size-11 rounded-full shadow-md shadow-black bg-white flex justify-center items-center"
+            >
+              <img src="../assets/video1347-9vnr.svg" alt=""  />
+            </button>
+            <a class="text-[#2C2D5B] font-bold" href="https://youtu.be/7PIji8OubXU?si=Edh-rUPHlqSHxto2">Play Demo</a>
+          </div>
+        </div>
+        <img
+          class="w-1/2"
+          src="../assets/image91fa59e6781adbdced82e349bb595d9911334-u70g-600h.png"
+          alt="img"
+        />
+      </div>
+      <div
+        class="min-w-full min-h-72 flex justify-center items-center mt-20 bg-slate-100"
+      >
+        <div
+          class="bg-white flex flex-col sm:flex-row gap-5 p-10 rounded-3xl shadow-md"
+        >
+          <div class="relative">
+            <p
+              class="absolute text-xs translate-x-3 -translate-y-2 bg-white px-1 top-0"
+            >
+              Origin
+            </p>
+            <div
+              class="w-60 min-h-11 rounded-lg ring-1 ring-[#2C2D5B] flex justify-center items-center gap-3 py-3"
+            >
+              <img src="../assets/location1281-5jcr.svg" alt="" class="w-5" />
+              <input
+                class="outline-none"
+                type="text"
+                placeholder="Enter location"
+              />
+            </div>
+          </div>
+          <div class="relative">
+            <p
+              class="absolute text-xs translate-x-3 -translate-y-2 bg-white px-1 top-0"
+            >
+              Destination
+            </p>
+            <div
+              class="w-60 min-h-11 rounded-lg ring-1 ring-[#2C2D5B] flex justify-center items-center gap-3 py-3"
+            >
+              <img src="../assets/location1295-7jn9.svg" alt="" class="w-5" />
+              <input
+                class="outline-none"
+                type="text"
+                placeholder="Enter location"
+              />
+            </div>
+          </div>
+          <div class="relative">
+            <p
+              class="absolute text-xs translate-x-3 -translate-y-2 bg-white px-1 top-0"
+            >
+              Weight
+            </p>
+            <div
+              class="w-60 min-h-11 rounded-lg ring-1 ring-[#2C2D5B] flex justify-center items-center gap-3 py-3"
+            >
+              <img src="../assets/bag21309-h9qk.svg" alt="" class="w-5" />
+              <input
+                class="outline-none"
+                type="text"
+                placeholder="Weight (KG)"
+              />
+            </div>
+          </div>
+          <button class="bg-[#2C2D5B] text-white rounded-lg px-9 py-3 text-sm">
+            Check Price
+          </button>
+        </div>
+      </div>
+      <div class="h-96 min-w-full bg-[#2C2D5B] pt-20 px-28">
+        <div class="flex text-white justify-center">
+          <div class="flex flex-col flex-1">
+            <h3 class="text-xl mb-6">
+              Ship<span class="text-red-600 font-semibold text-xl">Up</span>
+            </h3>
+            <p class="text-sm pr-12">
+              ShipUp delivers an unparalleled customer service through dedicated
+              customer teams, engaged people working in an agile culture, and a
+              global footprint
+            </p>
+          </div>
+          <div class="flex-1 pl-16">
+            <h3 class="mb-6 text-lg">Explore</h3>
+            <div class="text-sm flex flex-col gap-2">
+              <p>About US</p>
+              <p>Our Warehouses</p>
+              <p>Blogs</p>
+              <p>News and Media</p>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h3 class="mb-6 text-lg">Legel</h3>
+            <div class="text-sm flex flex-col gap-2">
+              <p>Terms</p>
+              <p>Policy</p>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h3 class="mb-6 text-lg">Social Media</h3>
+            <div class="text-sm flex gap-4">
+              <div class="size-10 bg-white rounded-full">
+                <img src="../assets/facebook.png" alt="" />
+              </div>
+              <div class="size-10 bg-white rounded-full">
+                <img src="../assets/twitter.png" alt="" />
+              </div>
+              <div class="size-10 bg-white rounded-full">
+                <img src="../assets/whatsapp.png" alt="" />
+              </div>
+              <div class="size-10 bg-white rounded-full">
+                <img src="../assets/instagram.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        const companyBtn = document.getElementById("companyBtn");
+        const model = document.querySelector(".model");
+        companyBtn.addEventListener("click", function () {
+          model.classList.toggle("hidden");
+        });
+      </script>
+    </div>
+  </body>
+</html>
